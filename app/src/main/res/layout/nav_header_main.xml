@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO (Step 4: Create nav_header_main. xml file and design this as per our requirement.)-->
+<!--START-->
+<!--Here we have add the drawable details to drawable folders and same
+    the String and Dimen values are added in their respective folders and files.-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_of_nav_main"
+    android:background="@drawable/nav_header_main_background"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_user_image"
+        android:layout_width="@dimen/nav_image_size"
+        android:layout_height="@dimen/nav_image_size"
+        android:layout_marginStart="@dimen/nav_content_margin_StartEnd"
+        android:layout_marginEnd="@dimen/nav_content_margin_StartEnd"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="@dimen/nav_image_circular_border_width"
+        android:contentDescription="@string/image_contentDescription"
+        android:src="@drawable/ic_user_place_holder" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nav_content_margin_StartEnd"
+        android:layout_marginTop="@dimen/nav_content_margin_top"
+        android:layout_marginEnd="@dimen/nav_content_margin_StartEnd"
+        android:layout_marginBottom="@dimen/nav_content_margin_bottom"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/nav_user_name_text_size"
+        tools:text="Username" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_divider_height"
+        android:background="@color/colorAccent" />
+</LinearLayout>
+    <!--END-->
