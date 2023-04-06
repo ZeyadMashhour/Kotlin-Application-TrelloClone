@@ -35,6 +35,10 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
         FirestoreClass().loadUserData(this)
 
+        fab_create_board.setOnClickListener{
+            startActivity(Intent(this, CreateBoardActivity::class.java))
+        }
+
     }
 
     override fun onBackPressed() {
